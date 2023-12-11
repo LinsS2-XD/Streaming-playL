@@ -1,0 +1,31 @@
+POST http://localhost:3333/playlist
+Content-Type: application/json
+
+{
+    "nmusicas": "336 musicas",
+    "nomeplaylist": "nomeplaylist: playlist 01 ",
+    "tempodeduracao": "20 horas"
+}
+
+###
+
+GET http://localhost:3333/playlist
+
+###
+
+GET http://localhost:3333/playlist?search=
+
+###
+
+PUT http://localhost:3333/playlist/fba26156-f6cc-426a-9ebf-7f9474ffc978
+Content-Type: application/json
+
+{
+    "nmusicas": "663 musicas",
+    "nomeplaylist": "nomeplaylist: playlist 02",
+    "tempodeduracao": "63 horas"
+}
+
+###
+
+DELETE http://localhost:3333/playlist/fba26156-f6cc-426a-9ebf-7f9474ffc978
